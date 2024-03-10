@@ -1,0 +1,22 @@
+{
+  "name": "devchat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sesrver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "moment": "^2.30.1",
+    "socket.io": "^4.7.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
