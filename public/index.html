@@ -10,29 +10,31 @@
 			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="css/style.css" />
+		<!-- <link rel="stylesheet" href="css/style.css" /> -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
 		<title>DevChat App</title>
 	</head>
-	<body>
-		<div class="join-container">
-			<header class="join-header">
-				<h1><i class="fas fa-smile"></i> DevChat</h1>
+	<body class="bg-black">
+		<div class="max-w-[500px] mx-auto my-20 text-white border-2 rounded-lg">
+			<header class="text-center p-5 bg-gray-900 rounded-md">
+				<h1 class="text-yellow-500"><i class="fas fa-tram"></i> DevChat</h1>
 			</header>
-			<main class="join-main">
+			<main class="py-8 px-10 bg-gray-800">
 				<form action="chat.html">
-					<div class="form-control">
-						<label for="username">Username</label>
+					<div class="mb-5">
+						<label for="username" class="block mb-1">Username</label>
 						<input
 							type="text"
 							name="username"
 							id="username"
 							placeholder="Enter username..."
-							required
+							required class="text-base p-1 h-10 w-full text-black rounded-md"
 						/>
 					</div>
-					<div class="form-control">
-						<label for="room">Room</label>
-						<select name="room" id="room">
+					<div class="mb-5">
+						<label for="room" class="block mb-1">Room</label>
+						<select name="room" id="room" class="text-base p-1 h-10 w-full text-black rounded-md">
 							<option value="JavaScript">JavaScript</option>
 							<option value="Python">Python</option>
 							<option value="PHP">PHP</option>
@@ -41,7 +43,7 @@
 							<option value="Java">Java</option>
 						</select>
 					</div>
-					<button type="submit" class="btn">Join Chat</button>
+					<button type="submit" class="cursor-pointer px-4 py-2 bg-yellow-500 rounded-lg text-black text-lg">Join Chat</button>
 				</form>
 			</main>
 		</div>
